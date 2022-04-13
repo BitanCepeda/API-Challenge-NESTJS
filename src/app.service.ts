@@ -48,8 +48,7 @@ export class AppService {
       discount_to:""
     })
     .then(function (response) {
-      console.log(response.data.DATA[0].ROW_ID)
-
+      
       const arr = response.data.DATA;
       
       arr.forEach(async (diamond) => {
