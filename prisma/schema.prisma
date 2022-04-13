@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root@localhost:3306/test"
+}
+
+model records {
+  row_id         Int     @id
+  loat_no        String?
+  shape          String?
+  carat          String?
+  color          String?
+  clarity        String?
+  cut            String?
+  polish         String?
+  symm           String?
+  fluro          String?
+  country        String?
+  lab            String?
+  certificate_no String?
+  certificate    String?
+  width          String?
+  length         String?
+  measurements   String?
+  depth_per      String?
+  table_per      String?
+  price_per_cts  Float?
+  rap            String?
+  amount         Float?
+  discount       Float?
+  cutlet         String?
+  gridle         String?
+  image          String?
+  black          String?
+  asset          String?
+  ideal          String?
+  heart          String?
+  arrow          String?
+  video          String?
+  status         String?
+}
